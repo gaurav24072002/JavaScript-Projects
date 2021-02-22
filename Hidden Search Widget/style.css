@@ -1,0 +1,57 @@
+body{
+    background-image: linear-gradient(-45deg, #6302ff , #6be1ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.search{
+   position: relative;
+   height: 50px;
+}
+
+.search .input{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background-image: linear-gradient(-45deg, rgb(157, 140, 255), rgb(250, 112, 255));
+    transition: width 0.5s ease;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 24px;
+    height: 52px;
+    width: 58px;
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, rgb(157, 140, 255), rgb(250, 112, 255));
+    border: 0;
+    transition: transform 0.2s ease-in;
+    
+}
+.btn:focus{
+    outline: none;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(1);
+}
+
+.search.active .input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(200px);
+}

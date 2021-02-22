@@ -1,13 +1,13 @@
 let progress = document.getElementById('progress');
 let prev = document.getElementById('prev');
-let next = document.getElementById('nexy');
+let next = document.getElementById('next');
 let circles = document.querySelectorAll('.circle');
 
 let CurrentActive = 1
 next.addEventListener('click', () => {
     CurrentActive++
     if(CurrentActive > circles.length){
-        CurrentActive = circles.length;
+        CurrentActive = circles.length
     }
     update();
 })
@@ -19,7 +19,7 @@ prev.addEventListener('click', () => {
     }
     update()
 })
-
+let idx;
 function update(){
     circles.forEach((circle , idx) => {
         if(idx < CurrentActive){
