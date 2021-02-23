@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(54, 54, 54);
+    overflow-x: hidden;
+    
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    transform-origin: top left;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
+    transition: transform 0.6s linear;
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+
+
+}
+
+.circle{
+    background-color: magenta;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    color: white;
+    height: 100px;
+    
+}
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#closes{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    cursor: pointer;
+}
+
+.circle button#opens{
+    left: 60%;
+    cursor: pointer;
+}
+
+.container img{
+    max-width: 95%;
+}
+
+/* .content{
+    max-width: 100px;
+    margin: 50px auto;
+} */
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    padding-left: 35px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-200%);
+    transition: transform 0.5s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+nav ul li + li {
+    margin-left: 15px;
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+}
+
+.container.container.show-nav + nav li {
+    transform: translateX(0);
+    transition: transform 0.2s ease-in;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
