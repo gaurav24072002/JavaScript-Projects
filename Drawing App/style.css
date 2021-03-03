@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* margin: 0; */
+    overflow: hidden;
+    background-image: linear-gradient(-45deg , #07ffff , #00ff00);
+}
+
+#canvas{
+    border: 1px solid rgb(234, 0, 255);
+    background-color: white;
+}
+
+.toolbox{
+    background-color: slateblue;
+    border: violet;
+    display: flex;
+    width: 785px;
+    height: 40px;
+    padding: 0.5rem;
+}
+
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    width: 30px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child{
+    margin-left: auto;
+}
