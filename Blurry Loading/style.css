@@ -3,13 +3,12 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .bg{
-    background: url('https://source.unsplash.com/1600x900/?nature,water');
+    background: center center url('https://source.unsplash.com/1600x900/?nature,water');
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
     position: absolute;
     top: -30px;
     left: -30px;
@@ -20,6 +19,7 @@ body{
     z-index: -1;
     filter: blur(0px);
     transition: filter 0.8s ease;
+    
 }
 
 .loading-text{
