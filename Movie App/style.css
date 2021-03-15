@@ -19,7 +19,20 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--secondary-color);
+}
+
+#Title{
+  color: aqua;
+  font-size: 30px;
+  font-family: fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search {
